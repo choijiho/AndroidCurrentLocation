@@ -1,5 +1,8 @@
 package net.gringrid.currentlocation;
 
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.Dialog;
@@ -78,7 +81,7 @@ public class CurrentLocationMain extends Activity{
         }
      }
     
-    /*
+    
     private boolean servicesConnected() {
         // Check that Google Play services is available
         int resultCode =
@@ -93,6 +96,7 @@ public class CurrentLocationMain extends Activity{
             return true;
         // Google Play services was not available for some reason
         } else {
+        	/*
             // Get the error code
             int errorCode = connectionResult.getErrorCode();
             // Get the error dialog from Google Play services
@@ -109,10 +113,11 @@ public class CurrentLocationMain extends Activity{
                 // Set the dialog in the DialogFragment
                 errorFragment.setDialog(errorDialog);
                 // Show the error dialog in the DialogFragment
-                errorFragment.show(getSupportFragmentManager(),
-                        "Location Updates");
+                //errorFragment.show(getSupportFragmentManager(),"Location Updates");
             }
+            */
+        	return true;
         }
     }
-	*/
+
 }
